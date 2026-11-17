@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="100%" role="img" aria-label="Naresh Reddy - Data Scientist">
+  <defs>
+    <pattern id="dotGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.15" fill="#247bff" fill-opacity="0.16" />
+      <circle cx="14" cy="14" r="0.85" fill="#ff354f" fill-opacity="0.10" />
+    </pattern>
+    <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#247bff" />
+      <stop offset="50%" stop-color="#7c4dff" />
+      <stop offset="100%" stop-color="#ff354f" />
+    </linearGradient>
+    <linearGradient id="blueRedHoriz" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#247bff" />
+      <stop offset="100%" stop-color="#ff354f" />
+    </linearGradient>
+    <radialGradient id="blueGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#247bff" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#247bff" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="redGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff354f" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#ff354f" stop-opacity="0" />
+    </radialGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <clipPath id="portraitClip">
+      <rect x="615" y="42" width="236" height="236" rx="22" />
+    </clipPath>
+  </defs>
+  <style>
+    .bg-base { fill: #070b16; }
+    .title-font { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; }
+    .body-font { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .mono-font { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+
+    @keyframes letterPop {
+      0% { opacity: 0; fill: #247bff; }
+      60% { opacity: 1; fill: #7eb2ff; }
+      100% { opacity: 1; fill: #f4f7ff; }
+    }
+    .ch {
+      opacity: 1;
+      fill: #f4f7ff;
+      animation: letterPop 0.45s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+    }
+
+    @keyframes roleSwap {
+      0%, 21% { opacity: 1; transform: translateY(0px); }
+      25%, 96% { opacity: 0; transform: translateY(-8px); }
+      100% { opacity: 1; transform: translateY(0px); }
+    }
+    .role-item {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 21px;
+      font-weight: 700;
+      fill: #247bff;
+    }
+    .r1 { opacity: 1; animation: roleSwap 8s infinite 0s; }
+    .r2 { opacity: 0; animation: roleSwap 8s infinite 2s; }
+    .r3 { opacity: 0; animation: roleSwap 8s infinite 4s; }
+    .r4 { opacity: 0; animation: roleSwap 8s infinite 6s; }
+
+    @keyframes pulseDot {
+      0%, 100% { opacity: 1; r: 5; }
+      50% { opacity: 0.45; r: 4; }
+    }
+    .status-dot { animation: pulseDot 2s ease-in-out infinite; }
+  </style>
+
+  <rect x="4" y="4" width="892" height="352" rx="22" class="bg-base" />
+  <rect x="4" y="4" width="892" height="352" rx="22" fill="url(#dotGrid)" />
+  <circle cx="160" cy="90" r="190" fill="url(#blueGlow)" />
+  <circle cx="760" cy="260" r="190" fill="url(#redGlow)" />
+  <rect x="4" y="4" width="892" height="352" rx="22" fill="none" stroke="url(#cyberGrad)" stroke-width="2.5" />
+
+  <rect x="42" y="34" width="388" height="32" rx="16" fill="#0e172e" stroke="#247bff" stroke-opacity="0.55" stroke-width="1.2" />
+  <circle cx="62" cy="50" r="5" fill="#ff354f" class="status-dot" />
+  <text x="76" y="55" class="mono-font" font-size="13.5" font-weight="600" fill="#cbd5e1">DATA SCIENTIST @ POINT PERFECT TECH</text>
+
+  <text x="42" y="106" class="mono-font" font-size="16" font-weight="600" fill="#ff354f">> HELLO WORLD, I'M</text>
+  <text x="42" y="164" class="title-font" font-size="54" letter-spacing="-0.5"><tspan class="ch" style="animation-delay:0.0s">N</tspan><tspan class="ch" style="animation-delay:0.08s">a</tspan><tspan class="ch" style="animation-delay:0.16s">r</tspan><tspan class="ch" style="animation-delay:0.24s">e</tspan><tspan class="ch" style="animation-delay:0.32s">s</tspan><tspan class="ch" style="animation-delay:0.4s">h</tspan><tspan class="ch" style="animation-delay:0.48s"> </tspan><tspan class="ch" style="animation-delay:0.56s">R</tspan><tspan class="ch" style="animation-delay:0.64s">e</tspan><tspan class="ch" style="animation-delay:0.72s">d</tspan><tspan class="ch" style="animation-delay:0.8s">d</tspan><tspan class="ch" style="animation-delay:0.88s">y</tspan></text>
+
+  <rect x="42" y="186" width="388" height="40" rx="10" fill="#0d162c" stroke="url(#blueRedHoriz)" stroke-width="1.5" />
+  <text x="58" y="212" class="mono-font" font-size="16" font-weight="700" fill="#ff354f">//</text>
+  <text x="84" y="213" class="role-item r1">Data Scientist</text>
+  <text x="84" y="213" class="role-item r2">ML Engineer</text>
+  <text x="84" y="213" class="role-item r3">AI Engineer</text>
+  <text x="84" y="213" class="role-item r4">Agentic Workflow Architect</text>
+
+  <text x="42" y="264" class="body-font" font-size="18.5" font-weight="600" fill="#e2e8f0">Turning deep AI research into scalable,</text>
+  <text x="42" y="290" class="body-font" font-size="18.5" font-weight="600" fill="#e2e8f0">autonomous agentic workflows.</text>
+
+  <text x="42" y="328" class="mono-font" font-size="13.5" fill="#94a3b8">Coimbatore, India  •  Agentic AI & Deep Learning</text>
+
+  <rect x="611" y="38" width="244" height="244" rx="25" fill="none" stroke="url(#cyberGrad)" stroke-width="3" filter="url(#neonGlow)" />
+  <rect x="615" y="42" width="236" height="236" rx="22" fill="#0a1020" />
+  
+
+  <rect x="633" y="294" width="200" height="30" rx="15" fill="#0e172e" stroke="#ff354f" stroke-opacity="0.6" stroke-width="1.2" />
+  <text x="733" y="314" text-anchor="middle" class="mono-font" font-size="13" font-weight="700" fill="#f4f7ff">@nareshreddy624262</text>
+</svg>
